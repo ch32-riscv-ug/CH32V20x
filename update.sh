@@ -21,11 +21,11 @@ cd ..
 # https://www.wch.cn/products/CH32V208.html
 cd datasheet_zh
 # https://www.wch.cn/downloads/CH32V203DS0_PDF.html
-wget --continue https://www.wch-ic.com/downloads/file/414.html -O CH32V203DS0.PDF
+wget --continue https://www.wch.cn/downloads/file/414.html -O CH32V203DS0.PDF
 # https://www.wch.cn/downloads/CH32V208DS0_PDF.html
-wget --continue https://www.wch-ic.com/downloads/file/415.html -O CH32V208DS0.PDF
+wget --continue https://www.wch.cn/downloads/file/415.html -O CH32V208DS0.PDF
 # https://www.wch.cn/downloads/CH32FV2x_V3xRM_PDF.html
-wget --continue https://www.wch-ic.com/downloads/file/371.html -O CH32FV2x_V3xRM.PDF
+wget --continue https://www.wch.cn/downloads/file/371.html -O CH32FV2x_V3xRM.PDF
 cd ..
 
 # https://www.wch.cn/downloads/CH32V20xEVT_ZIP.html
