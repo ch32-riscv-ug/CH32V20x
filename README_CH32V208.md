@@ -25,14 +25,14 @@
 <table>
     <thead>
         <tr>
-            <th>CH32V208<BR>GBU6<BR>(QFN28)</th>
-            <th>CH32V208<BR>CBU6<BR>(QFN48)</th>
-            <th>CH32V208<BR>RBT6<BR>(LQFP64)</th>
-            <th>CH32V208<BR>WBU6<BR>(QFN68M)</th>
+            <th>CH32V208&#8203;GBU6&#8203;(QFN28)</th>
+            <th>CH32V208&#8203;CBU6&#8203;(QFN48)</th>
+            <th>CH32V208&#8203;RBT6&#8203;(LQFP64)</th>
+            <th>CH32V208&#8203;WBU6&#8203;(QFN68M)</th>
             <th>Pin name</th>
             <th>Pin type</th>
             <th>I/O structure</th>
-            <th>Main function<br>(after reset)</th>
+            <th>Main function&#8203;(after reset)</th>
             <th>Note</th>
         </tr>
     </thead>
@@ -537,7 +537,7 @@
             <td>1</td>
             <td>2</td>
             <td>2</td>
-            <td>PC13<br>TAMPER-RTC</td>
+            <td>PC13 TAMPER-RTC</td>
             <td>I/O</td>
             <td>-</td>
             <td>PC13</td>
@@ -548,7 +548,7 @@
             <td>2</td>
             <td>3</td>
             <td>3</td>
-            <td>PC14<br>OSC32_IN</td>
+            <td>PC14 OSC32_IN</td>
             <td>I/O/A</td>
             <td>-</td>
             <td>PC14</td>
@@ -559,7 +559,7 @@
             <td>3</td>
             <td>4</td>
             <td>4</td>
-            <td>PC15<br>OSC32_OUT</td>
+            <td>PC15 OSC32_OUT</td>
             <td>I/O/A</td>
             <td>-</td>
             <td>PC15</td>
