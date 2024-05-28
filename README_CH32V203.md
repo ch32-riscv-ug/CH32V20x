@@ -772,7 +772,7 @@
             <td>2</td>
             <td>2</td>
             <td>2</td>
-            <td>PC13&#8203;TAMPER RTC</td>
+            <td>PC13 TAMPER RTC</td>
             <td>I/O</td>
             <td>-</td>
             <td>PC13</td>
@@ -788,7 +788,7 @@
             <td>3</td>
             <td>3</td>
             <td>3</td>
-            <td>PC14&#8203;OSC32_IN</td>
+            <td>PC14 OSC32_IN</td>
             <td>I/O/A</td>
             <td>-</td>
             <td>PC14</td>
@@ -804,7 +804,7 @@
             <td>4</td>
             <td>4</td>
             <td>4</td>
-            <td>PC15&#8203;OSC32_OUT</td>
+            <td>PC15 OSC32_OUT</td>
             <td>I/O/A</td>
             <td>-</td>
             <td>PC15</td>
