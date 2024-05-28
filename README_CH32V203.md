@@ -25,18 +25,18 @@
 <table>
     <thead>
         <tr>
-            <th>F6&#8203;(TSSOP&#8203;20)</th>
-            <th>F8&#8203;(TSSOP&#8203;20)</th>
-            <th>F8&#8203;(QFN&#8203;20)</th>
-            <th>G6&#8203;(QFN&#8203;28)</th>
-            <th>G8&#8203;(QSOP&#8203;28)</th>
-            <th>K6/K8&#8203;(LQFP&#8203;32)</th>
-            <th>C6&#8203;(LQFP&#8203;48)</th>
-            <th>C8&#8203;(QFN&#8203;48)</th>
-            <th>RB&#8203;(LQFP&#8203;64M)</th>
+            <th>F6&#8203;(&#8203;TSSOP&#8203;20)</th>
+            <th>F8&#8203;(&#8203;TSSOP&#8203;20)</th>
+            <th>F8&#8203;(&#8203;QFN&#8203;20)</th>
+            <th>G6&#8203;(&#8203;QFN&#8203;28)</th>
+            <th>G8&#8203;(&#8203;QSOP&#8203;28)</th>
+            <th>K6/K8&#8203;(&#8203;LQFP&#8203;32)</th>
+            <th>C6&#8203;(&#8203;LQFP&#8203;48)</th>
+            <th>C8&#8203;(&#8203;QFN&#8203;48)</th>
+            <th>RB&#8203;(&#8203;LQFP&#8203;64M)</th>
             <th>Pin name</th>
             <th>Pin type</th>
-            <th>I/O structure</th>
+            <th>I/O struc&shy;ture</th>
             <th>Main function&#8203;(after reset)</th>
             <th>Note</th>
         </tr>
