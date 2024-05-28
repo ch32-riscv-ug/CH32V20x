@@ -25,19 +25,19 @@
 <table>
     <thead>
         <tr>
-            <th>F6<br>(TSSOP<br>20)</th>
-            <th>F8<br>(TSSOP<br>20)</th>
-            <th>F8<br>(QFN<br>20)</th>
-            <th>G6<br>(QFN<br>28)</th>
-            <th>G8<br>(QSOP<br>28)</th>
-            <th>K6/K8<br>(LQFP<br>32)</th>
-            <th>C6<br>(LQFP<br>48)</th>
-            <th>C8<br>(QFN<br>48)</th>
-            <th>RB<br>(LQFP<br>64M)</th>
+            <th>F6&#8203;(TSSOP&#8203;20)</th>
+            <th>F8&#8203;(TSSOP&#8203;20)</th>
+            <th>F8&#8203;(QFN&#8203;20)</th>
+            <th>G6&#8203;(QFN&#8203;28)</th>
+            <th>G8&#8203;(QSOP&#8203;28)</th>
+            <th>K6/K8&#8203;(LQFP&#8203;32)</th>
+            <th>C6&#8203;(LQFP&#8203;48)</th>
+            <th>C8&#8203;(QFN&#8203;48)</th>
+            <th>RB&#8203;(LQFP&#8203;64M)</th>
             <th>Pin name</th>
             <th>Pin type</th>
-            <th>I/O<br> structure</th>
-            <th>Main function<br>(after reset)</th>
+            <th>I/O structure</th>
+            <th>Main function&#8203;(after reset)</th>
             <th>Note</th>
         </tr>
     </thead>
@@ -772,7 +772,7 @@
             <td>2</td>
             <td>2</td>
             <td>2</td>
-            <td>PC13<br>TAMPER RTC</td>
+            <td>PC13&#8203;TAMPER RTC</td>
             <td>I/O</td>
             <td>-</td>
             <td>PC13</td>
@@ -788,7 +788,7 @@
             <td>3</td>
             <td>3</td>
             <td>3</td>
-            <td>PC14<br>OSC32_IN</td>
+            <td>PC14&#8203;OSC32_IN</td>
             <td>I/O/A</td>
             <td>-</td>
             <td>PC14</td>
@@ -804,7 +804,7 @@
             <td>4</td>
             <td>4</td>
             <td>4</td>
-            <td>PC15<br>OSC32_OUT</td>
+            <td>PC15&#8203;OSC32_OUT</td>
             <td>I/O/A</td>
             <td>-</td>
             <td>PC15</td>
