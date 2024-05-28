@@ -31,7 +31,7 @@
             <th>CH32V208<BR>WBU6<BR>(QFN68M)</th>
             <th>Pin name</th>
             <th>Pin type</th>
-            <th>I/O<br>structure</th>
+            <th>I/O structure</th>
             <th>Main function<br>(after reset)</th>
             <th>Note</th>
         </tr>
