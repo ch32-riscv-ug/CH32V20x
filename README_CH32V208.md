@@ -6,6 +6,16 @@
 |-------|-------|-----|------|-----|-----|------|------|------|------|
 | PA14  | PA13  | PA9 | PA10 | PA2 | PA3 | PB10 | PB11 | PB0  | PB1  |
 
+Pin Alternate Functions
+[[ALL](https://ch32-riscv-ug.github.io/ch32_riscv_tools/PinAlternateFunctions/?chip=CH32V208)]
+[[ADC](https://ch32-riscv-ug.github.io/ch32_riscv_tools/PinAlternateFunctions/?chip=CH32V208&features=ADC)]
+[[I2C](https://ch32-riscv-ug.github.io/ch32_riscv_tools/PinAlternateFunctions/?chip=CH32V208&features=I2C)]
+[[SPI](https://ch32-riscv-ug.github.io/ch32_riscv_tools/PinAlternateFunctions/?chip=CH32V208&features=SPI)]
+[[SYS](https://ch32-riscv-ug.github.io/ch32_riscv_tools/PinAlternateFunctions/?chip=CH32V208&features=SYS)]
+[[TIM](https://ch32-riscv-ug.github.io/ch32_riscv_tools/PinAlternateFunctions/?chip=CH32V208&features=TIM)]
+[[UART/USART](https://ch32-riscv-ug.github.io/ch32_riscv_tools/PinAlternateFunctions/?chip=CH32V208&features=ART)]
+[[USB](https://ch32-riscv-ug.github.io/ch32_riscv_tools/PinAlternateFunctions/?chip=CH32V208&features=USB)]
+
 ## Official Site
 
 - https://www.wch-ic.com/products/CH32V208.html
