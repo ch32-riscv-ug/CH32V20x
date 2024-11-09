@@ -1,5 +1,5 @@
 
-Nanjing Qinheng Microelectronics Co., Ltd. 2024.04
+Nanjing Qinheng Microelectronics Co., Ltd. 2024.08
 
 https://wch-ic.com
 
@@ -19,7 +19,7 @@ Directory
   |      |      |      |      |-- Ld: ld file  
   |      |      |      |      |-- Peripheral: basic peripheral driver source file and header file
   |      |      |      |      |-- Startup: startup file. For different devices selected by users, the following 3 startup files are provided, and the matched device definition is selected in the ch32v20x.h file.
-  |      |      |      |      |      |-- startup_ch32v20x_D6.S: applied to the CH32V203F6-CH32V203G6-CH32V203K6-CH32V203K8-CH32V203C6-CH32V203C8-CH32V203G8
+  |      |      |      |      |      |-- startup_ch32v20x_D6.S: applied to the CH32V203F6-CH32V203G6-CH32V203K8-CH32V203C6-CH32V203C8-CH32V203G8
   |      |      |      |      |      |-- startup_ch32v20x_D8.S: applied to the CH32V203RB
   |      |      |      |      |      |-- startup_ch32v20x_D8W.S: applied to the CH32V208  
   |      |      |      |-- ADC
@@ -156,8 +156,10 @@ Directory
   |      |      |      |      |-- Stop_Mode: low power, stop mode routine
   |      |      |      |      |-- Standby_RAM_LV_Mode: when LV is enabled in standby mode, RAM 2k and 30K low-power data holding routines
   |      |      |      |      |-- Standby_RAM_Mode:when LV is not enabled in standby mode, RAM 2k and 30K low-power data holding routines
+  |      |      |      |      |-- Standby_RAM_Application：When MCU in standby mode, RAM 2k and 30K low-power data holding application routine
   |      |      |      |      |-- PVD_Wakeup：STOP mode PVD wakeup MCU Routine
   |      |      |      |      |-- PVD_VoltageJudger：PVD voltage Judger Routine
+  |      |      |      |      |-- Standby_RAM_Application：RAM data holding in standby mode Routine
   |      |      |      |-- PMP
   |      |      |      |      |-- PMP：Physical memory protection Routine
   |      |      |      |-- RCC
@@ -197,6 +199,7 @@ Directory
   |      |      |      |      |-- Synchro_Timer:timer synchronization mode
   |      |      |      |      |-- TIM_DMA: timer DMA routines
   |      |      |      |      |-- Encode:Timer encoder mode routines
+  |      |      |      |      |-- TIM_INT:Timer interput mode routines
   |      |      |      |-- TOUCHKEY
   |      |      |      |      |-- TKey:TouchKey Detection Routine 
   |      |      |      |-- USART
