@@ -21,15 +21,15 @@ cd ..
 # https://www.wch.cn/products/CH32V208.html
 cd datasheet_zh
 # https://www.wch.cn/downloads/CH32V203DS0_PDF.html
-curl -z CH32V203DS0.PDF -o CH32V203DS0.PDF https://www.wch.cn/downloads/file/414.html
+curl -z CH32V203DS0.PDF -o CH32V203DS0.PDF https://www.wch.cn/download/file?id=414
 # https://www.wch.cn/downloads/CH32V208DS0_PDF.html
-curl -z CH32V208DS0.PDF -o CH32V208DS0.PDF https://www.wch.cn/downloads/file/415.html
+curl -z CH32V208DS0.PDF -o CH32V208DS0.PDF https://www.wch.cn/download/file?id=415
 # https://www.wch.cn/downloads/CH32FV2x_V3xRM_PDF.html
-curl -z CH32FV2x_V3xRM.PDF -o CH32FV2x_V3xRM.PDF https://www.wch.cn/downloads/file/371.html
+curl -z CH32FV2x_V3xRM.PDF -o CH32FV2x_V3xRM.PDF https://www.wch.cn/download/file?id=371
 cd ..
 
 # https://www.wch.cn/downloads/CH32V20xEVT_ZIP.html
-curl -z CH32V20xEVT.ZIP -o CH32V20xEVT.ZIP https://www.wch.cn/downloads/file/385.html
+curl -z CH32V20xEVT.ZIP -o CH32V20xEVT.ZIP https://www.wch.cn/download/file?id=385
 rm -rfv EVT
 unzip -O GB2312 *.ZIP
 
