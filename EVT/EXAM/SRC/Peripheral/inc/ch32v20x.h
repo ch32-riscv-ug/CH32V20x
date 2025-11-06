@@ -2,7 +2,7 @@
  * File Name          : ch32v20x.h
  * Author             : WCH
  * Version            : V1.0.1
- * Date               : 2025/10/09
+ * Date               : 2025/11/04
  * Description        : CH32V20x Device Peripheral Access Layer Header File.
  *********************************************************************************
  * Copyright (c) 2021 Nanjing Qinheng Microelectronics Co., Ltd.
@@ -30,7 +30,7 @@ extern "C" {
     #if defined(CH32V20x_D8) || defined(CH32V20x_D8W)
     #define HSE_VALUE    ((uint32_t)32000000) /* Value of the External oscillator in Hz */
     #else
-        #if defined(HSE_VALUE_12M) || defined(CH32V20x_D6)
+        #if defined(HSE_VALUE_12M) 
             #define HSE_VALUE    ((uint32_t)12000000) /* Value of the External oscillator in Hz */
         #else
             #define HSE_VALUE    ((uint32_t)8000000) /* Value of the External oscillator in Hz */
