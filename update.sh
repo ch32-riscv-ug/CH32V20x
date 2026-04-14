@@ -41,14 +41,14 @@ cd ..
 # https://www.wch.cn/downloads/CH32V20xEVT_ZIP.html
 curl -z CH32V20xEVT.ZIP -o CH32V20xEVT.ZIP https://file.wch.cn/download/file?id=385
 rm -rfv EVT
-unzip -O GB2312 *.ZIP
+unzip -O GB2312 CH32V20xEVT.ZIP
 
 # https://www.wch.cn/downloads/CH32V205EVT_ZIP.html
 curl -z CH32V205EVT.ZIP -o CH32V205EVT.ZIP https://file.wch.cn/download/file?id=538
 rm -rfv EVT_205
-unzip -O GB2312 *.ZIP -d tmp_dir
+unzip -O GB2312 CH32V205EVT.ZIP -d tmp_dir
 mv tmp_dir/EVT EVT_205
-rm -r tmp_dir
+rm -rf tmp_dir
 
 git add . --all
 git commit -m "update"
