@@ -34,10 +34,12 @@ curl -z CH32V205DS0.PDF -o CH32V205DS0.PDF https://file.wch.cn/download/file?id=
 curl -z CH32V208DS0.PDF -o CH32V208DS0.PDF https://file.wch.cn/download/file?id=415
 # https://www.wch.cn/downloads/CH32FV2x_V3xRM_PDF.html
 curl -z CH32FV2x_V3xRM.PDF -o CH32FV2x_V3xRM.PDF https://file.wch.cn/download/file?id=371
+# https://www.wch.cn/downloads/CH32V205RM_PDF.html
+curl -z CH32V205RM.PDF -o CH32V205RM.PDF https://file.wch.cn/download/file?id=537
 cd ..
 
 # https://www.wch.cn/downloads/CH32V20xEVT_ZIP.html
-curl -z CH32V20xEVT.ZIP -o CH32V20xEVT.ZIP https://www.wch.cn/download/file?id=385
+curl -z CH32V20xEVT.ZIP -o CH32V20xEVT.ZIP https://file.wch.cn/download/file?id=385
 rm -rfv EVT
 unzip -O GB2312 *.ZIP
 
