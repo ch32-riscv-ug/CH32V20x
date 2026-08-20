@@ -4,9 +4,9 @@
 
 ## Series
 
-| Series | Core | ISA | Flash | SRAM | Max clock | VDD | Packages | Products | Official |
+| Series | Core | ISA | Flash | SRAM | Clock | VDD | Packages | Products | Official |
 |---|---|---|---|---|---|---|---|---|---|
-| **CH32V203** | QingKe V4B | RV32IMAC | - | - | 144 MHz | 1.8-3.6V | LQFP32,LQFP48,LQFP64M,QFN20,QFN28,QFN32,QFN48X7,QSOP28,TSSOP20 | 13 | [en](https://www.wch-ic.com/products/CH32V203.html) / [zh](https://www.wch.cn/products/CH32V203.html) |
+| **CH32V203** | QingKe V4B | RV32IMAC | - | - | 144/192 MHz | 1.8-3.6V | LQFP32,LQFP48,LQFP64M,QFN20,QFN28,QFN32,QFN48X7,QSOP28,TSSOP20 | 13 | [en](https://www.wch-ic.com/products/CH32V203.html) / [zh](https://www.wch.cn/products/CH32V203.html) |
 | **CH32V208** | QingKe V4C | RV32IMAC | 128K | 64K | 144 MHz | 2.4-3.6V | LQFP64M,QFN28,QFN48,QFN68 | 4 | [en](https://www.wch-ic.com/products/CH32V208.html) / [zh](https://www.wch.cn/products/CH32V208.html) |
 
 ## Debug / serial defaults
@@ -24,6 +24,27 @@
 | CH32V208DS0.PDF | datasheet | [page](https://www.wch-ic.com/downloads/CH32V208DS0_PDF.html) [mirror](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_en/CH32V208DS0.PDF) v2.7 | [page](https://www.wch.cn/downloads/CH32V208DS0_PDF.html) [mirror](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_zh/CH32V208DS0.PDF) v2.7 |
 | CH32FV2x_V3xRM.PDF | reference-manual | [page](https://www.wch-ic.com/downloads/CH32FV2x_V3xRM_PDF.html) [mirror](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_en/CH32FV2x_V3xRM.PDF) v2.5 | [page](https://www.wch.cn/downloads/CH32FV2x_V3xRM_PDF.html) [mirror](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_zh/CH32FV2x_V3xRM.PDF) v2.5 |
 | CH32V20xEVT.ZIP | evt | - | [page](https://www.wch.cn/downloads/CH32V20xEVT_ZIP.html) [mirror](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT) v2.4 |
+
+## Pinouts
+
+Pinout drawings are in the datasheet (chapter *Pinouts*):
+
+| Package | Products | Datasheet | Outline |
+|---|---|---|---|
+| LQFP48 | CH32V203C6T6, CH32V203C8T6 | [en](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_en/CH32V203DS0.PDF) / [zh](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_zh/CH32V203DS0.PDF) | [drawing](https://raw.githubusercontent.com/ch32-riscv-ug/WCH-common/main/image/package_LQFP48.png) |
+| QFN48X7 | CH32V203C6U6, CH32V203C8U6 | [en](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_en/CH32V203DS0.PDF) / [zh](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_zh/CH32V203DS0.PDF) | [drawing](https://raw.githubusercontent.com/ch32-riscv-ug/WCH-common/main/image/package_QFN48X7.png) |
+| TSSOP20 | CH32V203F6P6 | [en](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_en/CH32V203DS0.PDF) / [zh](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_zh/CH32V203DS0.PDF) | [drawing](https://raw.githubusercontent.com/ch32-riscv-ug/WCH-common/main/image/package_TSSOP20.png) |
+| TSSOP20 | CH32V203F8P6 | [en](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_en/CH32V203DS0.PDF) / [zh](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_zh/CH32V203DS0.PDF) | [drawing](https://raw.githubusercontent.com/ch32-riscv-ug/WCH-common/main/image/package_TSSOP20.png) |
+| QFN20 | CH32V203F8U6 | [en](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_en/CH32V203DS0.PDF) / [zh](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_zh/CH32V203DS0.PDF) | [drawing](https://raw.githubusercontent.com/ch32-riscv-ug/WCH-common/main/image/package_QFN20.png) |
+| QFN28 | CH32V203G6U6 | [en](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_en/CH32V203DS0.PDF) / [zh](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_zh/CH32V203DS0.PDF) | [drawing](https://raw.githubusercontent.com/ch32-riscv-ug/WCH-common/main/image/package_QFN28.png) |
+| QSOP28 | CH32V203G8R6 | [en](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_en/CH32V203DS0.PDF) / [zh](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_zh/CH32V203DS0.PDF) | [drawing](https://raw.githubusercontent.com/ch32-riscv-ug/WCH-common/main/image/package_QSOP28.png) |
+| LQFP32 | CH32V203K8T6 | [en](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_en/CH32V203DS0.PDF) / [zh](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_zh/CH32V203DS0.PDF) | [drawing](https://raw.githubusercontent.com/ch32-riscv-ug/WCH-common/main/image/package_LQFP32.png) |
+| QFN32 | CH32V203K8U7 | [en](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_en/CH32V203DS0.PDF) / [zh](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_zh/CH32V203DS0.PDF) | [drawing](https://raw.githubusercontent.com/ch32-riscv-ug/WCH-common/main/image/package_QFN32.png) |
+| LQFP64M | CH32V203RBT6 | [en](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_en/CH32V203DS0.PDF) / [zh](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_zh/CH32V203DS0.PDF) | [drawing](https://raw.githubusercontent.com/ch32-riscv-ug/WCH-common/main/image/package_LQFP64M.png) |
+| QFN48 | CH32V208CBU6 | [en](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_en/CH32V208DS0.PDF) / [zh](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_zh/CH32V208DS0.PDF) | [drawing](https://raw.githubusercontent.com/ch32-riscv-ug/WCH-common/main/image/package_QFN48.png) |
+| QFN28 | CH32V208GBU6 | [en](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_en/CH32V208DS0.PDF) / [zh](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_zh/CH32V208DS0.PDF) | [drawing](https://raw.githubusercontent.com/ch32-riscv-ug/WCH-common/main/image/package_QFN28.png) |
+| LQFP64M | CH32V208RBT6 | [en](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_en/CH32V208DS0.PDF) / [zh](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_zh/CH32V208DS0.PDF) | [drawing](https://raw.githubusercontent.com/ch32-riscv-ug/WCH-common/main/image/package_LQFP64M.png) |
+| QFN68 | CH32V208WBU6 | [en](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_en/CH32V208DS0.PDF) / [zh](https://ch32-riscv-ug.github.io/CH32V20x/datasheet_zh/CH32V208DS0.PDF) | [drawing](https://raw.githubusercontent.com/ch32-riscv-ug/WCH-common/main/image/package_QFN68.png) |
 
 ## Product comparison
 
@@ -334,53 +355,54 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 
 | Series | Field | Register | Bits | Values | Reset |
 |---|---|---|---|---|---|
-| CH32V203 | CAN_REMAP | PCFR1 | 13;14 | 0;2;3 | 0 |
-| CH32V203 | I2C1_REMAP | PCFR1 | 1 | 0;1 | 0 |
-| CH32V203 | SPI1_REMAP | PCFR1 | 0 | 0;1 | 0 |
-| CH32V203 | TIM1_REMAP | PCFR1 | 6;7 | 0;1;3 | 0 |
-| CH32V203 | TIM2_REMAP | PCFR1 | 8;9 | 0;1;2;3 | 0 |
-| CH32V203 | TIM3_REMAP | PCFR1 | 10;11 | 0;1;2;3 | 0 |
-| CH32V203 | USART1_REMAP | PCFR1 | 2 | 0;1;2;3 | 0 |
-| CH32V203 | USART3_REMAP | PCFR1 | 4;5 | 0;1;2;3 | 0 |
-| CH32V208 | CAN_REMAP | PCFR1 | 13;14 | 0;2;3 | 0 |
-| CH32V208 | I2C1_REMAP | PCFR1 | 1 | 0;1 | 0 |
-| CH32V208 | SPI1_REMAP | PCFR1 | 0 | 0;1 | 0 |
-| CH32V208 | TIM1_REMAP | PCFR1 | 6;7 | 0;1;3 | 0 |
-| CH32V208 | TIM2_REMAP | PCFR1 | 8;9 | 0;1;2;3 | 0 |
-| CH32V208 | TIM3_REMAP | PCFR1 | 10;11 | 0;1;2;3 | 0 |
-| CH32V208 | USART1_REMAP | PCFR1 | 2 | 0;1;2;3 | 0 |
-| CH32V208 | USART3_REMAP | PCFR1 | 4;5 | 0;1;2;3 | 0 |
+| CH32V203 | CAN_REMAP | PCFR1 | PCFR1:13;PCFR1:14 | 0;2;3 | 0 |
+| CH32V203 | I2C1_REMAP | PCFR1 | PCFR1:1 | 0;1 | 0 |
+| CH32V203 | SPI1_REMAP | PCFR1 | PCFR1:0 | 0;1 | 0 |
+| CH32V203 | TIM1_CAP_RM | PCFR1 | PCFR1:31 | 0 | 0 |
+| CH32V203 | TIM1_REMAP | PCFR1 | PCFR1:6;PCFR1:7 | 0;1;3 | 0 |
+| CH32V203 | TIM2_REMAP | PCFR1 | PCFR1:8;PCFR1:9 | 0;1;2;3 | 0 |
+| CH32V203 | TIM3_REMAP | PCFR1 | PCFR1:10;PCFR1:11 | 0;1;2;3 | 0 |
+| CH32V203 | TIM4_REMAP | PCFR1 | PCFR1:12 | 0;1 | 0 |
+| CH32V203 | USART1_REMAP | PCFR1\|PCFR2 | PCFR1:2;PCFR2:26 | 0;1;2;3 | 0 |
+| CH32V203 | USART2_REMAP | PCFR1 | PCFR1:3 | 0;1 | 0 |
+| CH32V203 | USART3_REMAP | PCFR1 | PCFR1:4;PCFR1:5 | 0;1;2;3 | 0 |
+| CH32V203 | ETH_10M_EN | CTR | CTR:2 | 0 |  |
+| CH32V208 | CAN_REMAP | PCFR1 | PCFR1:13;PCFR1:14 | 0;2;3 | 0 |
+| CH32V208 | I2C1_REMAP | PCFR1 | PCFR1:1 | 0;1 | 0 |
+| CH32V208 | SPI1_REMAP | PCFR1 | PCFR1:0 | 0;1 | 0 |
+| CH32V208 | TIM1_REMAP | PCFR1 | PCFR1:6;PCFR1:7 | 0;1;3 | 0 |
+| CH32V208 | TIM2_REMAP | PCFR1 | PCFR1:8;PCFR1:9 | 0;1;2;3 | 0 |
+| CH32V208 | TIM3_REMAP | PCFR1 | PCFR1:10;PCFR1:11 | 0;1;2;3 | 0 |
+| CH32V208 | TIM4_REMAP | PCFR1 | PCFR1:12 | 0;1 | 0 |
+| CH32V208 | USART1_REMAP | PCFR1\|PCFR2 | PCFR1:2;PCFR2:26 | 0;1;2;3 | 0 |
+| CH32V208 | USART2_REMAP | PCFR1 | PCFR1:3 | 0;1 | 0 |
+| CH32V208 | USART3_REMAP | PCFR1 | PCFR1:4;PCFR1:5 | 0;1;2;3 | 0 |
+| CH32V208 | ETH_10M_EN | CTR | CTR:2 | 0 |  |
 
 </details>
+
+## Block diagrams
+
+### CH32V203
+<img src="image/architecture_CH32V203.png" alt="CH32V203 block diagram" />
+
+### CH32V208
+<img src="image/architecture_CH32V208.png" alt="CH32V208 block diagram" />
 
 ## Errata
 
 - The blue-dashed sections of the clock tree (Figure 2-4) are not applicable to these CH32V203RB lots (they only apply when the 5th-to-last lot digit is greater than 0). *(applies: CH32V203; 5th-to-last digit of lot number = 0 (CH32V203RB))*
 - CH32V203RB uses a 32MHz external crystal or clock (HSE); no load capacitors are needed with an external crystal as they are built in. *(applies: CH32V203; CH32V203RB (all lots))*
 
+## EVT examples
+
+194 routines in [EVT/EXAM](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM):
+
+[ADC](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/ADC) 15 · [APPLICATION](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/APPLICATION) 10 · [BKP](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/BKP) 1 · [BLE](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/BLE) 52 · [CAN](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/CAN) 3 · [CRC](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/CRC) 1 · [DMA](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/DMA) 2 · [ETH](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/ETH) 15 · [EXTI](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/EXTI) 1 · [FLASH](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/FLASH) 1 · [FreeRTOS](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/FreeRTOS) 1 · [GPIO](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/GPIO) 1 · [HarmonyOS](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/HarmonyOS) 1 · [I2C](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/I2C) 6 · [IAP](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/IAP) 1 · [INT](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/INT) 1 · [IWDG](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/IWDG) 1 · [OPA](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/OPA) 1 · [PMP](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/PMP) 1 · [PWR](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/PWR) 9 · [RCC](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/RCC) 5 · [RT-Thread](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/RT-Thread) 1 · [RTC](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/RTC) 2 · [SDI_Printf](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/SDI_Printf) 1 · [SPI](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/SPI) 7 · [SYSTICK](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/SYSTICK) 1 · [TIM](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/TIM) 16 · [TOUCHKEY](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/TOUCHKEY) 1 · [TencentOS](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/TencentOS) 1 · [USART](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/USART) 10 · [USB](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/USB) 24 · [WWDG](https://github.com/ch32-riscv-ug/CH32V20x/tree/main/EVT/EXAM/WWDG) 1
+
 ## Notes
 - CH32V205 has moved to its own repository: https://github.com/ch32-riscv-ug/CH32V205 (own datasheet, reference manual and EVT).
 - Per-chip pages from before this README was generated: [CH32V203](README_CH32V203.md), [CH32V208](README_CH32V208.md).
-
-## Diagrams
-
-### system CH32V203
-<img src="image/system_CH32V203.png" />
-
-### system CH32V208
-<img src="image/system_CH32V208.png" />
-
-### product CH32V203
-<img src="image/product_CH32V203.jpg" />
-
-### product CH32V208
-<img src="image/product_CH32V208.jpg" />
-
-### architecture CH32V203
-<img src="image/architecture_CH32V203.png" />
-
-### architecture CH32V208
-<img src="image/architecture_CH32V208.png" />
 
 ---
 Data: [ch32-device-data](https://github.com/ch32-riscv-ug/ch32-device-data) (tables/ -- each value carries its evidence and confidence there).
