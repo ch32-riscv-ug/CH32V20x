@@ -8,6 +8,8 @@ Programming and debug: **2-wire SDI** (WCH-Link, `Serial Debug Interface`).
 
 ### Debug / serial defaults
 
+Where these land **without writing a remap register**. SWD is live at reset; the UART pads are not -- the pin must still be put into alternate-function mode. See `route` in tables/README.ja.md.
+
 | Series | SWDIO | SWCLK | UART TX | UART RX |
 |---|---|---|---|---|
 | CH32V203 | PA13 | PA14 | PA9 (USART1); PA2 (USART2) | PA10 (USART1); PA3 (USART2) |
@@ -131,7 +133,7 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 | PA10 | I/O | 31 | 31 | 31 | 31 | 31 | - | 20 | 18 | 19 | 26 | 20 | 20 | 43 | UART RX (USART1) |
 | PA11 | I/O/A | 32 | 32 | 32 | 32 | 32 | 17 | - | 17 | 19 | 27 | 21 | 21 | 44 |  |
 | PA12 | I/O/A | 33 | 33 | 33 | 33 | 33 | 18 | - | 16 | 20 | 28 | 22 | 22 | 45 |  |
-| PA13 | I/O | 34 | 34 | 34 | 34 | 34 | 19 | 1 | - | 21 | 28 | 23 | 23 | 46 | SWDIO |
+| PA13 | I/O | 34 | 34 | 34 | 34 | 34 | 19 | 1 | 16 | 21 | 28 | 23 | 23 | 46 | SWDIO |
 | PA14 | I/O | 37 | 37 | 37 | 37 | 37 | 20 | 2 | 17 | 22 | 1 | 24 | 24 | 49 | SWCLK |
 | PA15 | I/O | 38 | 38 | 38 | 38 | 38 | - | - | - | 23 | - | 25 | 25 | 50 |  |
 | PB0 | I/O/A | 18 | 18 | 18 | 18 | 18 | - | 14 | 8 | 14 | 14 | 14 | 14 | 26 | UART TX (USART4) |
@@ -142,7 +144,7 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 | PB5 | I/O | 41 | 41 | 41 | 41 | 41 | - | - | - | 26 | 1 | 28 | 28 | 57 |  |
 | PB6 | I/O | 42 | 42 | 42 | 42 | 42 | - | 1 | - | 27 | 2 | 29 | 29 | 58 |  |
 | PB7 | I/O | 43 | 43 | 43 | 43 | 43 | - | 2 | - | 28 | 3 | 30 | 30 | 59 |  |
-| PB8 | I/O/A | 45 | 45 | 45 | 45 | 45 | - | - | - | - | 5 | - | 32 | 61 |  |
+| PB8 | I/O/A | 45 | 45 | 45 | 45 | 45 | 1 | - | - | 1 | 5 | 31 | 32 | 61 |  |
 | PB9 | I/O/A | 46 | 46 | 46 | 46 | 46 | - | - | - | - | - | - | 31 | 62 |  |
 | PB10 | I/O/A | 21 | 21 | 21 | 21 | 21 | - | - | 10 | - | 18 | - | - | 29 | UART TX (USART3) |
 | PB11 | I/O/A | 22 | 22 | 22 | 22 | 22 | - | - | 11 | - | 19 | - | - | 30 | UART RX (USART3) |
@@ -163,8 +165,11 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 | PC10 | I/O | - | - | - | - | - | - | - | - | - | - | - | - | 51 |  |
 | PC11 | I/O | - | - | - | - | - | - | - | - | - | - | - | - | 52 |  |
 | PC12 | I/O | - | - | - | - | - | - | - | - | - | - | - | - | 53 |  |
+| PD0 | I/O | - | - | - | - | 5 | - | - | - | - | - | - | - | - |  |
+| PD1 | I/O | - | - | - | - | 6 | - | - | - | - | - | - | - | - |  |
 | PD2 | I/O | - | - | - | - | - | - | - | - | - | - | - | - | 54 |  |
 | BOOT0 | I | 44 | 44 | 44 | 44 | 44 | 1 | - | - | 1 | 4 | 31 | 31 | 60 |  |
+| BOOT1 | I | - | - | - | - | 20 | - | - | - | - | - | - | - | - |  |
 | NRST | I | 7 | 7 | 7 | 7 | 7 | 4 | 5 | - | 4 | 8 | 4 | - | 7 |  |
 | OSC_IN | I/A | 5 | 5 | 5 | 5 | 5 | 2 | - | - | 2 | - | 2 | 4 | 5 | OSC |
 | OSC_OUT | O/A | 6 | 6 | 6 | 6 | 6 | 3 | - | - | 3 | - | 3 | 5 | 6 | OSC |
@@ -180,6 +185,9 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 | VDD_IO_1 | P | 24 | 24 | 24 | 24 | - | - | - | - | - | - | - | - | 32 |  |
 | VDD_IO_3 | P | 48 | 48 | 48 | 48 | - | - | - | - | - | - | - | - | 64 |  |
 | VDD_IO_4 | P | - | - | - | - | - | - | - | - | - | - | - | - | 19 |  |
+| VDD_VIO_1 | P | - | - | - | - | 24 | - | - | - | - | - | - | - | - |  |
+| VDD_VIO_2 | P | - | - | - | - | 36 | - | - | - | - | - | - | - | - |  |
+| VDD_VIO_3 | P | - | - | - | - | 48 | - | - | - | - | - | - | - | - |  |
 | VSS | P | EP | EP | EP | EP | - | 15 | 3 | - | 16/EP | 7 | 16/32 | EP | - |  |
 | VSSA | P | 8 | 8 | 8 | 8 | 8 | - | - | - | - | - | - | - | 12 |  |
 | VSS_1 | P | 23 | 23 | 23 | 23 | 23 | - | - | - | - | - | - | - | 31 |  |
@@ -235,6 +243,8 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 | PC10 | UART4_TX | - | - | - | - | - | - | - | - | - | USART3_TX | - | - |
 | PC11 | UART4_RX | - | - | - | - | - | - | - | - | - | USART3_RX | - | - |
 | PC12 | - | - | - | - | - | - | - | - | - | - | USART3_CK | - | - |
+| PD0 | - | - | - | - | - | USART4_CK | - | - | CAN_RX | - | - | - | - |
+| PD1 | - | - | - | - | - | USART8_CK | - | - | CAN_TX | - | - | - | - |
 | PD2 | TIM3_ETR | - | - | - | - | - | - | - | - | - | - | TIM3_ETR | TIM3_ETR |
 | OSC_IN | - | PD0 | - | - | - | - | - | - | - | - | - | - | - |
 | OSC_OUT | - | PD1 | - | - | - | - | - | - | - | - | - | - | - |
@@ -275,7 +285,7 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 | PB5 | I/O | 40 | - | 57 | 60 |  |
 | PB6 | I/O | 41 | 24 | 58 | 61 |  |
 | PB7 | I/O | 42 | 25 | 59 | 62 |  |
-| PB8 | I/O/A | 44 | - | 61 | 64 |  |
+| PB8 | I/O/A | 44 | 26 | 61 | 64 |  |
 | PB9 | I/O/A | 45 | - | 62 | 65 |  |
 | PB10 | I/O/A | 20 | - | 29 | 29 | UART TX (USART3) |
 | PB11 | I/O/A | 21 | - | 30 | 30 | UART RX (USART3) |
@@ -387,31 +397,31 @@ Pin functions (filterable): [ALL](https://ch32-riscv-ug.github.io/ch32-device-da
 
 | Series | Field | Register | Bits | Values | Reset |
 |---|---|---|---|---|---|
-| CH32V203 | CAN_REMAP | PCFR1 | PCFR1:13;PCFR1:14 | 0;2;3 | 0 |
+| CH32V203 | CAN_REMAP | PCFR1 | PCFR1:13;PCFR1:14 | 0;1;2;3 | 0 |
 | CH32V203 | I2C1_REMAP | PCFR1 | PCFR1:1 | 0;1 | 0 |
 | CH32V203 | SPI1_REMAP | PCFR1 | PCFR1:0 | 0;1 | 0 |
 | CH32V203 | TIM1_REMAP | PCFR1 | PCFR1:6;PCFR1:7 | 0;1;2;3 | 0 |
 | CH32V203 | TIM2_REMAP | PCFR1 | PCFR1:8;PCFR1:9 | 0;1;2;3 | 0 |
 | CH32V203 | TIM3_REMAP | PCFR1 | PCFR1:10;PCFR1:11 | 0;1;2;3 | 0 |
 | CH32V203 | TIM4_REMAP | PCFR1 | PCFR1:12 | 0;1 | 0 |
-| CH32V203 | TIM5CH4_RM | PCFR1 | PCFR1:16 | 0 | 0 |
+| CH32V203 | TIM5CH4_RM | PCFR1 | PCFR1:16 | 0;1 | 0 |
 | CH32V203 | USART1_REMAP | PCFR1\|PCFR2 | PCFR1:2;PCFR2:26 | 0;1;2;3 | 0 |
 | CH32V203 | USART2_REMAP | PCFR1 | PCFR1:3 | 0;1 | 0 |
 | CH32V203 | USART3_REMAP | PCFR1 | PCFR1:4;PCFR1:5 | 0;1;2;3 | 0 |
-| CH32V203 | USART4_RM | PCFR2 | PCFR2:16;PCFR2:17 | 0;1;2;3 |  |
+| CH32V203 | USART4_RM | PCFR2 | PCFR2:16;PCFR2:17 | 0;1;2;3 | 0 |
 | CH32V203 | ETH_10M_EN | CTR | CTR:2 | 0 |  |
-| CH32V208 | CAN_REMAP | PCFR1 | PCFR1:13;PCFR1:14 | 0;2;3 | 0 |
+| CH32V208 | CAN_REMAP | PCFR1 | PCFR1:13;PCFR1:14 | 0;1;2;3 | 0 |
 | CH32V208 | I2C1_REMAP | PCFR1 | PCFR1:1 | 0;1 | 0 |
 | CH32V208 | SPI1_REMAP | PCFR1 | PCFR1:0 | 0;1 | 0 |
 | CH32V208 | TIM1_REMAP | PCFR1 | PCFR1:6;PCFR1:7 | 0;1;2;3 | 0 |
 | CH32V208 | TIM2_REMAP | PCFR1 | PCFR1:8;PCFR1:9 | 0;1;2;3 | 0 |
 | CH32V208 | TIM3_REMAP | PCFR1 | PCFR1:10;PCFR1:11 | 0;1;2;3 | 0 |
 | CH32V208 | TIM4_REMAP | PCFR1 | PCFR1:12 | 0;1 | 0 |
-| CH32V208 | TIM5CH4_RM | PCFR1 | PCFR1:16 | 0 | 0 |
+| CH32V208 | TIM5CH4_RM | PCFR1 | PCFR1:16 | 0;1 | 0 |
 | CH32V208 | USART1_REMAP | PCFR1\|PCFR2 | PCFR1:2;PCFR2:26 | 0;1;2;3 | 0 |
 | CH32V208 | USART2_REMAP | PCFR1 | PCFR1:3 | 0;1 | 0 |
 | CH32V208 | USART3_REMAP | PCFR1 | PCFR1:4;PCFR1:5 | 0;1;2;3 | 0 |
-| CH32V208 | USART4_RM | PCFR2 | PCFR2:16;PCFR2:17 | 0;1;2;3 |  |
+| CH32V208 | USART4_RM | PCFR2 | PCFR2:16;PCFR2:17 | 0;1;2;3 | 0 |
 | CH32V208 | ETH_10M_EN | CTR | CTR:2 | 0 |  |
 
 </details>
