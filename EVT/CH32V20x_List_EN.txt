@@ -46,9 +46,6 @@ Directory
   |      |      |      |      |      |-- CoreMark：CoreMark routine under 168M（12M_HSE） system conditions——only applied to CH32V20x_D6,168M is only suitable for Commercial Grade applications: 0℃ ≤ TA ≤ 70℃ with good heat dissipation
   |      |      |      |      |-- Electric_Hair_Dryer
   |      |      |      |      |      |-- Electric_Hair_Dryer：Electric_Hair_Dryer routine
-  |      |      |      |      |-- WUIGUI
-  |      |      |      |      |      |-- WUI-GUI-FLASH：WUI-GUI-FLASH routine 
-  |      |      |      |      |      |-- WUI-GUI-LIVE：WUI-GUI-LIVE routine 
   |      |      |      |-- BLE ----only for CH32V20x_D8W 
   |      |      |      |      |-- BackupUpgrade_IAP: backup wireless upgrade IAP routine. Detect the current code flag, determine whether to move the code from the backup area to the user area, and run the code in the user area 
   |      |      |      |      |-- BackupUpgrade_OTA: backup wireless upgrade user routine. Add OTA function to peripheral slave routines, save the upgrade firmware to the backup area and jump to the IAP program to upgrade 
@@ -139,7 +136,24 @@ Directory
   |      |      |      |-- FreeRTOS
   |      |      |      |      |-- FreeRTOS_Core:FreeRTOS migration routines
   |      |      |      |-- GPIO
-  |      |      |      |      |-- GPIO_Toggle:GPIO routines 
+  |      |      |      |      |-- GPIO_Toggle:GPIO routines
+  |      |      |      |-- GUI
+  |      |      |      |      |-- WCH-GUI-FLASH：WCH-GUI-FLASH routine(Low CPU usage) 
+  |      |      |      |      |      |--GUI_ExternalFlash: WCH-GUI-FLASH use external flash routine
+  |      |      |      |      |      |--GUI_Onflash：WCH-GUI-FLASH use internal flash routine
+  |      |      |      |      |      |--WCHGUI_Lib: WCH-GUI-FLASH core library (with low CPU usage)
+  |      |      |      |      |      |--DOC
+  |      |      |      |      |      |      |--Instructions for downloading external FLASH.pdf
+  |      |      |      |      |      |      |--WCHGUI software documentation.pdf
+  |      |      |      |      |      |--CH32V20x_WUI_DEMO.pdf
+  |      |      |      |      |      |--CH32V20x_WUI_DEMO.schdoc
+  |      |      |      |      |      |--CH32V20x_WUI_DEMO.kicad_sch
+  |      |      |      |      |-- WCH-GUI-LIVE：WCH-GUI-LIVE routine(Save storage resources)
+  |      |      |      |      |      |--DEMO1: WCH-GUI-LIVE basic routine
+  |      |      |      |      |      |--DEMO2: WCH-GUI-LIVE complex routine
+  |      |      |      |      |      |--WVUI_Lib: WCH-GUI-LIVE core library(with save storage resources)
+  |      |      |      |      |      |--DOC
+  |      |      |      |      |      |      |--WCH-GUI-Live library Reference Manual.pdf 
   |      |      |      |-- HarmonyOS
   |      |      |      |      |-- LiteOS_m：HarmonyOS migration routine
   |      |      |      |-- I2C
